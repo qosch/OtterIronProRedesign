@@ -1,0 +1,177 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C16
+U 1 1 5FAA3B6F
+P 7000 2650
+F 0 "C16" H 7115 2696 50  0000 L CNN
+F 1 "1µF 35V" H 7115 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7038 2500 50  0001 C CNN
+F 3 "~" H 7000 2650 50  0001 C CNN
+	1    7000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C17
+U 1 1 5FAA4DDB
+P 7600 2650
+F 0 "C17" H 7715 2696 50  0000 L CNN
+F 1 "1µF 35V" H 7715 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7638 2500 50  0001 C CNN
+F 3 "~" H 7600 2650 50  0001 C CNN
+	1    7600 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2500 6500 1500
+Connection ~ 7000 2500
+Wire Wire Line
+	7000 2500 6500 2500
+Wire Wire Line
+	7600 2500 7000 2500
+Wire Wire Line
+	2600 4750 2000 4750
+Text HLabel 6500 1500 1    50   Input ~ 0
+Current+
+Text HLabel 6500 6000 3    50   Output ~ 0
+Current-
+Text HLabel 2000 4750 0    50   Input ~ 0
+PwmIn
+Wire Wire Line
+	7000 2800 7600 2800
+Connection ~ 7600 2800
+Wire Wire Line
+	7600 2800 8200 2800
+Connection ~ 7600 2500
+Wire Wire Line
+	8200 2500 7600 2500
+$Comp
+L Device:CP C18
+U 1 1 5FAA5306
+P 8200 2650
+F 0 "C18" H 8318 2696 50  0000 L CNN
+F 1 "470µF 35V" H 8318 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_10x10.5" H 8238 2500 50  0001 C CNN
+F 3 "~" H 8200 2650 50  0001 C CNN
+	1    8200 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Driver_FET:LM5109AMA U?
+U 1 1 5FB13C21
+P 4300 4400
+F 0 "U?" H 4300 4967 50  0000 C CNN
+F 1 "LM5109AMA" H 4300 4876 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4300 3900 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm5109a.pdf" H 4300 4400 50  0001 C CNN
+	1    4300 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5FB153C7
+P 6400 4000
+F 0 "Q?" H 6604 4046 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 6604 3955 50  0000 L CNN
+F 2 "" H 6600 4100 50  0001 C CNN
+F 3 "~" H 6400 4000 50  0001 C CNN
+	1    6400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5FB17747
+P 6400 5000
+F 0 "Q?" H 6604 5046 50  0000 L CNN
+F 1 "Q_NMOS_GDS" H 6604 4955 50  0000 L CNN
+F 2 "" H 6600 5100 50  0001 C CNN
+F 3 "~" H 6400 5000 50  0001 C CNN
+	1    6400 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FB18CE5
+P 5000 3950
+F 0 "C?" H 5115 3996 50  0000 L CNN
+F 1 "100nF" H 5115 3905 50  0000 L CNN
+F 2 "" H 5038 3800 50  0001 C CNN
+F 3 "~" H 5000 3950 50  0001 C CNN
+	1    5000 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FB19178
+P 3500 4150
+F 0 "C?" H 3615 4196 50  0000 L CNN
+F 1 "1µF 35V" H 3615 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3538 4000 50  0001 C CNN
+F 3 "~" H 3500 4150 50  0001 C CNN
+	1    3500 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 4100 3900 4100
+Wire Wire Line
+	3900 4100 3900 4000
+Wire Wire Line
+	3900 4000 3500 4000
+Wire Wire Line
+	3500 4300 3500 4700
+Wire Wire Line
+	3500 4700 4000 4700
+Wire Wire Line
+	4000 4500 3000 4500
+Wire Wire Line
+	4000 4600 3000 4600
+$Comp
+L Device:R R?
+U 1 1 5FB1A9A7
+P 5750 4000
+F 0 "R?" V 5543 4000 50  0000 C CNN
+F 1 "2.2" V 5634 4000 50  0000 C CNN
+F 2 "" V 5680 4000 50  0001 C CNN
+F 3 "~" H 5750 4000 50  0001 C CNN
+	1    5750 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB1B6FA
+P 5750 5000
+F 0 "R?" V 5543 5000 50  0000 C CNN
+F 1 "R" V 5634 5000 50  0000 C CNN
+F 2 "" V 5680 5000 50  0001 C CNN
+F 3 "~" H 5750 5000 50  0001 C CNN
+	1    5750 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4600 4500 5500 4500
+Wire Wire Line
+	5500 4500 5500 4000
+Wire Wire Line
+	5500 4000 5600 4000
+Wire Wire Line
+	5500 4700 5500 5000
+Wire Wire Line
+	5500 5000 5600 5000
+Wire Wire Line
+	4600 4700 5500 4700
+Wire Wire Line
+	4600 4100 5000 4100
+$EndSCHEMATC
