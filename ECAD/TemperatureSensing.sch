@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Sensor_Temperature:MCP9700AT-ETT U7
+L OtterIronProRedesign-rescue:MCP9700AT-ETT-Sensor_Temperature U8
 U 1 1 5FAA495C
 P 4000 6250
-F 0 "U7" H 3670 6296 50  0000 R CNN
+F 0 "U8" H 3670 6296 50  0000 R CNN
 F 1 "MCP9700AT-ETT" H 3670 6205 50  0000 R CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4000 5850 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21942e.pdf" H 3850 6500 50  0001 C CNN
@@ -28,40 +28,21 @@ Text HLabel 4500 6250 2    50   Output ~ 0
 PcbTemperature
 Wire Wire Line
 	4400 6250 4500 6250
-$Comp
-L Amplifier_Operational:MCP6L91T-EOT U6
-U 1 1 5FAAF2F8
-P 4000 3500
-F 0 "U6" H 4344 3546 50  0000 L CNN
-F 1 "MCP6L91T-EOT" H 4344 3455 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3900 3300 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/22141b.pdf" H 4000 3700 50  0001 C CNN
-F 4 "MCP6L91T-E/OT" H 4000 3500 50  0001 C CNN "manf#"
-F 5 "C145706" H 4000 3500 50  0001 C CNN "Field5"
-	1    4000 3500
-	1    0    0    -1  
-$EndComp
 Text Notes 4500 3100 0    50   ~ 0
-Alternate parts:\nTexas Instruments LMV721IDBVR\nON Semiconductor NCS2003SN2T1G
-Text HLabel 3900 2500 1    50   Input ~ 0
-V+
+Alternate parts:\nTexas Instruments LMC6482\nAnalog Devices AD8629
 $Comp
-L Device:C C21
+L OtterIronProRedesign-rescue:C-Device C25
 U 1 1 5FAB0D60
 P 4150 2800
-F 0 "C21" H 4265 2846 50  0000 L CNN
+F 0 "C25" H 4265 2846 50  0000 L CNN
 F 1 "100nF" H 4265 2755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4188 2650 50  0001 C CNN
 F 3 "~" H 4150 2800 50  0001 C CNN
 	1    4150 2800
 	1    0    0    -1  
 $EndComp
-Text HLabel 3900 3850 3    50   Input ~ 0
-GND
 Wire Wire Line
 	3900 3800 3900 3850
-Text HLabel 4150 3000 3    50   Input ~ 0
-GND
 Wire Wire Line
 	3900 2500 3900 2600
 Wire Wire Line
@@ -74,116 +55,398 @@ Wire Wire Line
 Wire Wire Line
 	4150 2950 4150 3000
 $Comp
-L Device:R R16
-U 1 1 5FAB2415
-P 5000 3750
-F 0 "R16" H 5070 3796 50  0000 L CNN
-F 1 "10k" H 5070 3705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4930 3750 50  0001 C CNN
-F 3 "~" H 5000 3750 50  0001 C CNN
-	1    5000 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R17
+L OtterIronProRedesign-rescue:R-Device R17
 U 1 1 5FAB3055
-P 5000 4400
-F 0 "R17" H 5070 4446 50  0000 L CNN
-F 1 "33" H 5070 4355 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4930 4400 50  0001 C CNN
-F 3 "~" H 5000 4400 50  0001 C CNN
-	1    5000 4400
+P 7500 3850
+F 0 "R17" H 7570 3896 50  0000 L CNN
+F 1 "1k" H 7570 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7430 3850 50  0001 C CNN
+F 3 "~" H 7500 3850 50  0001 C CNN
+	1    7500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L OtterIronProRedesign-rescue:C-Device C27
+U 1 1 5FAB555E
+P 2500 3550
+F 0 "C27" H 2615 3596 50  0000 L CNN
+F 1 "1n" H 2615 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2538 3400 50  0001 C CNN
+F 3 "~" H 2500 3550 50  0001 C CNN
+	1    2500 3550
+	1    0    0    -1  
+$EndComp
+Text HLabel 1750 3400 0    50   Input ~ 0
+ThermoCoupleInput+
+Text HLabel 8500 3600 2    50   Output ~ 0
+IronTemperature
+$Comp
+L OtterIronProRedesign-rescue:C-Device C30
+U 1 1 5FAC1673
+P 8000 3850
+F 0 "C30" H 8115 3896 50  0000 L CNN
+F 1 "1n" H 8115 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8038 3700 50  0001 C CNN
+F 3 "~" H 8000 3850 50  0001 C CNN
+	1    8000 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR072
+U 1 1 5FB06980
+P 3900 2500
+F 0 "#PWR072" H 3900 2350 50  0001 C CNN
+F 1 "+3.3VA" H 3915 2673 50  0000 C CNN
+F 2 "" H 3900 2500 50  0001 C CNN
+F 3 "" H 3900 2500 50  0001 C CNN
+	1    3900 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR082
+U 1 1 5FB06E59
+P 4000 5950
+F 0 "#PWR082" H 4000 5800 50  0001 C CNN
+F 1 "+3.3VA" H 4015 6123 50  0000 C CNN
+F 2 "" H 4000 5950 50  0001 C CNN
+F 3 "" H 4000 5950 50  0001 C CNN
+	1    4000 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR073
+U 1 1 5FB08672
+P 4150 3000
+F 0 "#PWR073" H 4150 2750 50  0001 C CNN
+F 1 "GNDA" H 4155 2827 50  0000 C CNN
+F 2 "" H 4150 3000 50  0001 C CNN
+F 3 "" H 4150 3000 50  0001 C CNN
+	1    4150 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR083
+U 1 1 5FB08A65
+P 4000 6550
+F 0 "#PWR083" H 4000 6300 50  0001 C CNN
+F 1 "GNDA" H 4005 6377 50  0000 C CNN
+F 2 "" H 4000 6550 50  0001 C CNN
+F 3 "" H 4000 6550 50  0001 C CNN
+	1    4000 6550
+	1    0    0    -1  
+$EndComp
+Text HLabel 1750 3700 0    50   Input ~ 0
+ThermoCoupleInput-
+$Comp
+L power:GNDA #PWR075
+U 1 1 5FB0B853
+P 3900 3850
+F 0 "#PWR075" H 3900 3600 50  0001 C CNN
+F 1 "GNDA" H 3905 3677 50  0000 C CNN
+F 2 "" H 3900 3850 50  0001 C CNN
+F 3 "" H 3900 3850 50  0001 C CNN
+	1    3900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U7
+U 1 1 5FB41EF0
+P 4000 3500
+F 0 "U7" H 4000 3867 50  0000 C CNN
+F 1 "TLV2376" H 4000 3776 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4000 3500 50  0001 C CNN
+F 3 "~" H 4000 3500 50  0001 C CNN
+	1    4000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U7
+U 2 1 5FB42C69
+P 6800 3600
+F 0 "U7" H 6800 3967 50  0000 C CNN
+F 1 "TLV2376" H 6800 3876 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6800 3600 50  0001 C CNN
+F 3 "~" H 6800 3600 50  0001 C CNN
+	2    6800 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Opamp_Dual_Generic U7
+U 3 1 5FB43212
+P 4000 3500
+F 0 "U7" H 3958 3546 50  0000 L CNN
+F 1 "TLV2376" H 3958 3455 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4000 3500 50  0001 C CNN
+F 3 "~" H 4000 3500 50  0001 C CNN
+	3    4000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R19
+U 1 1 5FB4529A
+P 3250 4500
+F 0 "R19" V 3043 4500 50  0000 C CNN
+F 1 "68k" V 3134 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3180 4500 50  0001 C CNN
+F 3 "~" H 3250 4500 50  0001 C CNN
+	1    3250 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 3700 3000 3700
+$Comp
+L OtterIronProRedesign-rescue:R-Device R18
+U 1 1 5FB4B213
+P 7500 4350
+F 0 "R18" H 7570 4396 50  0000 L CNN
+F 1 "22" H 7570 4305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7430 4350 50  0001 C CNN
+F 3 "~" H 7500 4350 50  0001 C CNN
+	1    7500 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 3500 5000 3500
+	8500 3600 8000 3600
 Wire Wire Line
-	5000 3500 5000 3600
+	7500 3700 7500 3600
+Connection ~ 7500 3600
 Wire Wire Line
-	5000 3900 5000 4100
-Connection ~ 5000 4100
-Text HLabel 5000 4750 3    50   Input ~ 0
-GND
+	7500 3600 7100 3600
 $Comp
-L Device:R R15
-U 1 1 5FAB3D06
-P 3100 3400
-F 0 "R15" V 2893 3400 50  0000 C CNN
-F 1 "0" V 2984 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3030 3400 50  0001 C CNN
-F 3 "~" H 3100 3400 50  0001 C CNN
-	1    3100 3400
+L power:GNDA #PWR079
+U 1 1 5FB4C190
+P 7500 4600
+F 0 "#PWR079" H 7500 4350 50  0001 C CNN
+F 1 "GNDA" H 7505 4427 50  0000 C CNN
+F 2 "" H 7500 4600 50  0001 C CNN
+F 3 "" H 7500 4600 50  0001 C CNN
+	1    7500 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4500 7500 4600
+Wire Wire Line
+	7500 4200 7500 4100
+Wire Wire Line
+	7500 4100 6450 4100
+Wire Wire Line
+	6450 4100 6450 3700
+Wire Wire Line
+	6450 3700 6500 3700
+Connection ~ 7500 4100
+Wire Wire Line
+	7500 4100 7500 4000
+Wire Wire Line
+	7500 4100 8000 4100
+Wire Wire Line
+	8000 4100 8000 4000
+Wire Wire Line
+	8000 3700 8000 3600
+Connection ~ 8000 3600
+Wire Wire Line
+	8000 3600 7500 3600
+$Comp
+L OtterIronProRedesign-rescue:R-Device R15
+U 1 1 5FB507E4
+P 2250 3400
+F 0 "R15" H 2320 3446 50  0000 L CNN
+F 1 "22" H 2320 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2180 3400 50  0001 C CNN
+F 3 "~" H 2250 3400 50  0001 C CNN
+	1    2250 3400
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C19
-U 1 1 5FAB4658
-P 2750 3550
-F 0 "C19" H 2865 3596 50  0000 L CNN
-F 1 "DNP" H 2865 3505 50  0000 L CNN
-F 2 "" H 2788 3400 50  0001 C CNN
-F 3 "~" H 2750 3550 50  0001 C CNN
-	1    2750 3550
+L OtterIronProRedesign-rescue:R-Device R16
+U 1 1 5FB5150D
+P 2250 3700
+F 0 "R16" H 2320 3746 50  0000 L CNN
+F 1 "22" H 2320 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2180 3700 50  0001 C CNN
+F 3 "~" H 2250 3700 50  0001 C CNN
+	1    2250 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 3700 1750 3700
+Wire Wire Line
+	1750 3400 2100 3400
+Wire Wire Line
+	2400 3400 2500 3400
+Connection ~ 2500 3400
+Wire Wire Line
+	2400 3700 2500 3700
+Connection ~ 2500 3700
+$Comp
+L OtterIronProRedesign-rescue:C-Device C26
+U 1 1 5FB53B0A
+P 2500 3250
+F 0 "C26" H 2615 3296 50  0000 L CNN
+F 1 "1n" H 2615 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2538 3100 50  0001 C CNN
+F 3 "~" H 2500 3250 50  0001 C CNN
+	1    2500 3250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C20
-U 1 1 5FAB555E
-P 3350 3550
-F 0 "C20" H 3465 3596 50  0000 L CNN
-F 1 "DNP" H 3465 3505 50  0000 L CNN
-F 2 "" H 3388 3400 50  0001 C CNN
-F 3 "~" H 3350 3550 50  0001 C CNN
-	1    3350 3550
+L OtterIronProRedesign-rescue:C-Device C29
+U 1 1 5FB545B5
+P 2500 3850
+F 0 "C29" H 2615 3896 50  0000 L CNN
+F 1 "1n" H 2615 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2538 3700 50  0001 C CNN
+F 3 "~" H 2500 3850 50  0001 C CNN
+	1    2500 3850
 	1    0    0    -1  
 $EndComp
-Text HLabel 2750 3750 3    50   Input ~ 0
-GND
-Wire Wire Line
-	2750 3700 2750 3750
-Wire Wire Line
-	2750 3400 2500 3400
-Text HLabel 2500 3400 0    50   Input ~ 0
-ThermoCoupleInput
-Text HLabel 5500 3500 2    50   Output ~ 0
-IronTemperature
 $Comp
-L Device:C C22
-U 1 1 5FAC1673
-P 5350 3750
-F 0 "C22" H 5465 3796 50  0000 L CNN
-F 1 "DNP" H 5465 3705 50  0000 L CNN
-F 2 "" H 5388 3600 50  0001 C CNN
-F 3 "~" H 5350 3750 50  0001 C CNN
-	1    5350 3750
+L power:GNDA #PWR076
+U 1 1 5FB54A03
+P 2500 4000
+F 0 "#PWR076" H 2500 3750 50  0001 C CNN
+F 1 "GNDA" H 2505 3827 50  0000 C CNN
+F 2 "" H 2500 4000 50  0001 C CNN
+F 3 "" H 2500 4000 50  0001 C CNN
+	1    2500 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 3500 5350 3500
+	3700 3600 3650 3600
+$Comp
+L Device:R R20
+U 1 1 5FB5CE93
+P 4750 4500
+F 0 "R20" V 4543 4500 50  0000 C CNN
+F 1 "560k" V 4634 4500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 4500 50  0001 C CNN
+F 3 "~" H 4750 4500 50  0001 C CNN
+	1    4750 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3000 4500 3100 4500
+Wire Wire Line
+	3000 3700 3000 4500
+Wire Wire Line
+	3400 4500 3650 4500
+Connection ~ 3650 4500
+Wire Wire Line
+	3650 4500 4600 4500
+Wire Wire Line
+	5000 3500 5000 4500
+Wire Wire Line
+	5000 4500 4900 4500
+$Comp
+L Device:C C28
+U 1 1 5FB611BD
+P 5500 3750
+F 0 "C28" H 5385 3704 50  0000 R CNN
+F 1 "DNP" H 5385 3795 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5538 3600 50  0001 C CNN
+F 3 "~" H 5500 3750 50  0001 C CNN
+	1    5500 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDA #PWR078
+U 1 1 5FB6190D
+P 5500 4000
+F 0 "#PWR078" H 5500 3750 50  0001 C CNN
+F 1 "GNDA" H 5505 3827 50  0000 C CNN
+F 2 "" H 5500 4000 50  0001 C CNN
+F 3 "" H 5500 4000 50  0001 C CNN
+	1    5500 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3900 5500 4000
+Wire Wire Line
+	5000 3500 5500 3500
 Connection ~ 5000 3500
 Wire Wire Line
-	5000 4100 5350 4100
+	5500 3500 5500 3600
+Connection ~ 5500 3500
 Wire Wire Line
-	5350 4100 5350 3900
+	5500 3500 6500 3500
+$Comp
+L OtterIronProRedesign-rescue:C-Device C31
+U 1 1 5FBC2AD8
+P 4500 5750
+F 0 "C31" H 4615 5796 50  0000 L CNN
+F 1 "100nF" H 4615 5705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4538 5600 50  0001 C CNN
+F 3 "~" H 4500 5750 50  0001 C CNN
+	1    4500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR080
+U 1 1 5FBC327B
+P 4500 5600
+F 0 "#PWR080" H 4500 5450 50  0001 C CNN
+F 1 "+3.3VA" H 4515 5773 50  0000 C CNN
+F 2 "" H 4500 5600 50  0001 C CNN
+F 3 "" H 4500 5600 50  0001 C CNN
+	1    4500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR081
+U 1 1 5FBC488D
+P 4500 5900
+F 0 "#PWR081" H 4500 5650 50  0001 C CNN
+F 1 "GNDA" H 4505 5727 50  0000 C CNN
+F 2 "" H 4500 5900 50  0001 C CNN
+F 3 "" H 4500 5900 50  0001 C CNN
+	1    4500 5900
+	1    0    0    -1  
+$EndComp
+Text Notes 800  4250 0    50   ~ 0
+JBC C245 Thermocouple:\n1.65mV @100°C\n-0.3mV @0°C\n=> 1.95mV/100°C = 19.5µV/°C\n=>8.5mV @ 450°C
 Wire Wire Line
-	5350 3600 5350 3500
-Connection ~ 5350 3500
+	3650 3600 3650 4500
 Wire Wire Line
-	5350 3500 5500 3500
+	2500 3400 3200 3400
 Wire Wire Line
-	3250 3400 3350 3400
-Connection ~ 3350 3400
+	4300 3500 5000 3500
+Text Notes 4350 3350 0    50   ~ 0
+operational amplifiers with higher slew rates need less settling time after\nheater was active before temperature measurement can be taken.
+Text Notes 550  2800 0    50   ~ 0
+positive input is connected to GND close to the connector
+$Comp
+L power:GNDA #PWR074
+U 1 1 5FB6DBDF
+P 2500 3100
+F 0 "#PWR074" H 2500 2850 50  0001 C CNN
+F 1 "GNDA" H 2505 2927 50  0000 C CNN
+F 2 "" H 2500 3100 50  0001 C CNN
+F 3 "" H 2500 3100 50  0001 C CNN
+	1    2500 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Jumper JP1
+U 1 1 5FBBF07A
+P 3200 3700
+F 0 "JP1" V 3154 3827 50  0000 L CNN
+F 1 "Jumper" V 3245 3827 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3200 3700 50  0001 C CNN
+F 3 "~" H 3200 3700 50  0001 C CNN
+	1    3200 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDA #PWR077
+U 1 1 5FBBFD34
+P 3200 4000
+F 0 "#PWR077" H 3200 3750 50  0001 C CNN
+F 1 "GNDA" H 3205 3827 50  0000 C CNN
+F 2 "" H 3200 4000 50  0001 C CNN
+F 3 "" H 3200 4000 50  0001 C CNN
+	1    3200 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 3200 3400
 Wire Wire Line
-	3350 3400 3700 3400
-Wire Wire Line
-	2950 3400 2750 3400
-Connection ~ 2750 3400
-Wire Wire Line
-	3350 3700 3350 4100
-Wire Wire Line
-	3350 4100 5000 4100
-Wire Wire Line
-	5000 4250 5000 4100
-Wire Wire Line
-	5000 4550 5000 4750
+	3200 3400 3700 3400
 $EndSCHEMATC
