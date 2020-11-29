@@ -26,11 +26,11 @@ F 5 "C784818" H 2300 3600 50  0001 C CNN "LCSC"
 	1    2300 3600
 	1    0    0    -1  
 $EndComp
-Text HLabel 3000 3500 2    50   Input ~ 0
-CurrentMeasurement
-Text HLabel 3000 3600 2    50   Input ~ 0
-IronTemperature
 Text HLabel 3000 3700 2    50   Input ~ 0
+CurrentMeasurement
+Text HLabel 3000 3500 2    50   Input ~ 0
+IronTemperature
+Text HLabel 3000 3600 2    50   Input ~ 0
 PcbTemperature
 Text HLabel 3000 4600 2    50   BiDi ~ 0
 USB_P
@@ -44,7 +44,7 @@ U 1 1 5FA93827
 P 2300 5500
 F 0 "NT2" H 2300 5681 50  0000 C CNN
 F 1 "Net-Tie_2" H 2300 5590 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 2300 5500 50  0001 C CNN
+F 2 "ECAD:NetTie-2_SMD_Pad0.25mm" H 2300 5500 50  0001 C CNN
 F 3 "~" H 2300 5500 50  0001 C CNN
 	1    2300 5500
 	1    0    0    -1  
@@ -126,7 +126,6 @@ NoConn ~ 2900 4400
 NoConn ~ 2900 4900
 NoConn ~ 1600 4900
 NoConn ~ 1600 4300
-NoConn ~ 1600 4100
 NoConn ~ 1600 3400
 NoConn ~ 1600 3500
 NoConn ~ 1600 3600
@@ -211,7 +210,7 @@ U 1 1 5FAA3B81
 P 2250 1700
 F 0 "NT1" H 2250 1881 50  0000 C CNN
 F 1 "Net-Tie_2" H 2250 1790 50  0000 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 2250 1700 50  0001 C CNN
+F 2 "ECAD:NetTie-2_SMD_Pad0.25mm" H 2250 1700 50  0001 C CNN
 F 3 "~" H 2250 1700 50  0001 C CNN
 	1    2250 1700
 	1    0    0    -1  
@@ -558,8 +557,32 @@ Wire Wire Line
 Wire Wire Line
 	1100 2500 1600 2500
 NoConn ~ 1600 3000
-Text HLabel 1500 3100 0    50   Input ~ 0
+Text HLabel 1500 4100 0    50   Input ~ 0
 Switch2
 Wire Wire Line
 	1500 3100 1600 3100
+Wire Wire Line
+	1500 4100 1600 4100
+$Comp
+L MCU_ST_STM32F0:STM32F042C6Tx U8
+U 1 1 5FC30478
+P 4750 3550
+F 0 "U8" H 4750 1961 50  0000 C CNN
+F 1 "STM32F042C6Tx" H 4750 1870 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4250 2150 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 4750 3550 50  0001 C CNN
+	1    4750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32F0:STM32F042K6Tx U7
+U 1 1 5FC31F08
+P 6350 3450
+F 0 "U7" H 6350 2361 50  0000 C CNN
+F 1 "STM32F042K6Tx" H 6350 2270 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 5950 2550 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 6350 3450 50  0001 C CNN
+	1    6350 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

@@ -130,11 +130,11 @@ L OtterIronProRedesign-rescue:D_Zener-Device D1
 U 1 1 5FA9E0DC
 P 2600 5900
 F 0 "D1" V 2554 5980 50  0000 L CNN
-F 1 "24V 10A" V 2645 5980 50  0000 L CNN
+F 1 "20V 10A" V 2645 5980 50  0000 L CNN
 F 2 "Diode_SMD:D_SMB" H 2600 5900 50  0001 C CNN
 F 3 "~" H 2600 5900 50  0001 C CNN
-F 4 "SMBJ24CA" V 2600 5900 50  0001 C CNN "manf#"
-F 5 "C284099" V 2600 5900 50  0001 C CNN "LCSC"
+F 4 "SMBJ20A" V 2600 5900 50  0001 C CNN "manf#"
+F 5 "C151257" V 2600 5900 50  0001 C CNN "LCSC"
 	1    2600 5900
 	0    1    1    0   
 $EndComp
@@ -382,13 +382,11 @@ Wire Wire Line
 Wire Wire Line
 	5500 4100 5750 4100
 Text Notes 1500 7500 0    50   ~ 0
-This board is designed for an input voltage of 20V and a maximum current of 7.5A\n(JBC C254 cartriges have a heating element with ~~2.8 ohms resistance). When operated\nfrom a standard USB-C Power Delivery power supply, only 3A are available (limiting\nhappens in software), for the full current a different power supply has to be used (that's\nwhat the two solder connections are for). If only usage with standard USB-C Power Delivery\nis inteded, a cheaper P-Channel MOSFET with higher R_DS(on) can be chosen and the\ncurrent sense resistor should be increased (see remarks on corresponding cheets).
+This board is designed for an input voltage of 20V and a maximum current of 7.5A\n(JBC C254 cartriges have a heating element with ~~2.8 ohms resistance). When operated\nfrom a standard USB-C Power Delivery power supply, only 3A are available (limiting\nhappens in software), for the full current a different power supply has to be used (that's\nwhat the two solder connections are for). If only usage with standard USB-C Power Delivery\nis inteded, cheaper MOSFETs with higher R_DS(on) can be chosen and the\ncurrent sense resistor should be increased (see remarks on corresponding cheets).
 Wire Wire Line
 	5500 3200 6000 3200
 Wire Wire Line
 	5500 3300 6000 3300
-Text Notes 4850 5250 0    50   ~ 0
-TODO: pin for PwmL
 Text Notes 5900 1650 0    50   ~ 0
 TODO: larger display with same pinout?
 $Sheet
@@ -424,7 +422,7 @@ U 1 1 5FB3A46B
 P 3250 6500
 F 0 "R6" V 3043 6500 50  0000 C CNN
 F 1 "1M" V 3134 6500 50  0000 C CNN
-F 2 "Diode_SMD:D_0402_1005Metric" V 3180 6500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3180 6500 50  0001 C CNN
 F 3 "~" H 3250 6500 50  0001 C CNN
 	1    3250 6500
 	0    1    1    0   

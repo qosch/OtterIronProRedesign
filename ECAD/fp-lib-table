@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name OtterIronPro_UiBoard)(type KiCad)(uri ${KIPRJMOD}/OtterIronPro_UiBoard.pretty)(options "")(descr ""))
+  (lib (name ECAD)(type KiCad)(uri ${KIPRJMOD}/OtterIronProRedesign.pretty/ECAD.pretty)(options "")(descr ""))
 )
