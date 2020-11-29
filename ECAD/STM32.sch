@@ -13,19 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L OtterIronProRedesign-rescue:STM32F072C8Ux-MCU_ST_STM32F0 U1
-U 1 1 5FA9144C
-P 2300 3600
-F 0 "U1" H 2250 5281 50  0000 C CNN
-F 1 "STM32F072C8Ux" H 2250 5190 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.6x5.6mm" H 1700 2200 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00090510.pdf" H 2300 3600 50  0001 C CNN
-F 4 "STM32F072C8U6" H 2300 3600 50  0001 C CNN "manf#"
-F 5 "C784818" H 2300 3600 50  0001 C CNN "LCSC"
-	1    2300 3600
-	1    0    0    -1  
-$EndComp
 Text HLabel 3000 3700 2    50   Input ~ 0
 CurrentMeasurement
 Text HLabel 3000 3500 2    50   Input ~ 0
@@ -428,17 +415,6 @@ F 3 "" H 4500 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:C-Device C2
-U 1 1 5FAEE30E
-P 3300 900
-F 0 "C2" H 3415 946 50  0000 L CNN
-F 1 "100nF" H 3415 855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3338 750 50  0001 C CNN
-F 3 "~" H 3300 900 50  0001 C CNN
-	1    3300 900 
-	1    0    0    -1  
-$EndComp
-$Comp
 L OtterIronProRedesign-rescue:C-Device C3
 U 1 1 5FAEE9FF
 P 3900 900
@@ -447,28 +423,6 @@ F 1 "100nF" H 4015 855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 3938 750 50  0001 C CNN
 F 3 "~" H 3900 900 50  0001 C CNN
 	1    3900 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L OtterIronProRedesign-rescue:C-Device C4
-U 1 1 5FAEEEF7
-P 4500 900
-F 0 "C4" H 4615 946 50  0000 L CNN
-F 1 "100nF" H 4615 855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4538 750 50  0001 C CNN
-F 3 "~" H 4500 900 50  0001 C CNN
-	1    4500 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L OtterIronProRedesign-rescue:+3.3V-power #PWR019
-U 1 1 5FB0433E
-P 4500 750
-F 0 "#PWR019" H 4500 600 50  0001 C CNN
-F 1 "+3.3V" H 4515 923 50  0000 C CNN
-F 2 "" H 4500 750 50  0001 C CNN
-F 3 "" H 4500 750 50  0001 C CNN
-	1    4500 750 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -483,28 +437,6 @@ F 3 "" H 3900 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:+3.3V-power #PWR017
-U 1 1 5FB04C7D
-P 3300 750
-F 0 "#PWR017" H 3300 600 50  0001 C CNN
-F 1 "+3.3V" H 3315 923 50  0000 C CNN
-F 2 "" H 3300 750 50  0001 C CNN
-F 3 "" H 3300 750 50  0001 C CNN
-	1    3300 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L OtterIronProRedesign-rescue:GND-power #PWR020
-U 1 1 5FB057C0
-P 3300 1050
-F 0 "#PWR020" H 3300 800 50  0001 C CNN
-F 1 "GND" H 3305 877 50  0000 C CNN
-F 2 "" H 3300 1050 50  0001 C CNN
-F 3 "" H 3300 1050 50  0001 C CNN
-	1    3300 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L OtterIronProRedesign-rescue:GND-power #PWR021
 U 1 1 5FB05B21
 P 3900 1050
@@ -513,17 +445,6 @@ F 1 "GND" H 3905 877 50  0000 C CNN
 F 2 "" H 3900 1050 50  0001 C CNN
 F 3 "" H 3900 1050 50  0001 C CNN
 	1    3900 1050
-	1    0    0    -1  
-$EndComp
-$Comp
-L OtterIronProRedesign-rescue:GND-power #PWR022
-U 1 1 5FB05C8F
-P 4500 1050
-F 0 "#PWR022" H 4500 800 50  0001 C CNN
-F 1 "GND" H 4505 877 50  0000 C CNN
-F 2 "" H 4500 1050 50  0001 C CNN
-F 3 "" H 4500 1050 50  0001 C CNN
-	1    4500 1050
 	1    0    0    -1  
 $EndComp
 Text Notes 4900 800  0    50   ~ 0
@@ -564,17 +485,6 @@ Wire Wire Line
 Wire Wire Line
 	1500 4100 1600 4100
 $Comp
-L MCU_ST_STM32F0:STM32F042C6Tx U8
-U 1 1 5FC30478
-P 4750 3550
-F 0 "U8" H 4750 1961 50  0000 C CNN
-F 1 "STM32F042C6Tx" H 4750 1870 50  0000 C CNN
-F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4250 2150 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 4750 3550 50  0001 C CNN
-	1    4750 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L MCU_ST_STM32F0:STM32F042K6Tx U7
 U 1 1 5FC31F08
 P 6350 3450
@@ -583,6 +493,168 @@ F 1 "STM32F042K6Tx" H 6350 2270 50  0000 C CNN
 F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 5950 2550 50  0001 R CNN
 F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00105814.pdf" H 6350 3450 50  0001 C CNN
 	1    6350 3450
+	1    0    0    -1  
+$EndComp
+Text HLabel 6950 3850 2    50   BiDi ~ 0
+USB_N
+Text HLabel 6950 3950 2    50   BiDi ~ 0
+USB_P
+Wire Wire Line
+	6850 3950 6950 3950
+Wire Wire Line
+	6850 3850 6950 3850
+$Comp
+L OtterIronProRedesign-rescue:+3.3VA-power #PWR0102
+U 1 1 5FC2F5C6
+P 6350 2400
+F 0 "#PWR0102" H 6350 2250 50  0001 C CNN
+F 1 "+3.3VA" H 6365 2573 50  0000 C CNN
+F 2 "" H 6350 2400 50  0001 C CNN
+F 3 "" H 6350 2400 50  0001 C CNN
+	1    6350 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L OtterIronProRedesign-rescue:+3.3V-power #PWR0103
+U 1 1 5FC2FD51
+P 6250 2400
+F 0 "#PWR0103" H 6250 2250 50  0001 C CNN
+F 1 "+3.3V" H 6265 2573 50  0000 C CNN
+F 2 "" H 6250 2400 50  0001 C CNN
+F 3 "" H 6250 2400 50  0001 C CNN
+	1    6250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L OtterIronProRedesign-rescue:+3.3V-power #PWR0104
+U 1 1 5FC3061C
+P 6450 2400
+F 0 "#PWR0104" H 6450 2250 50  0001 C CNN
+F 1 "+3.3V" H 6465 2573 50  0000 C CNN
+F 2 "" H 6450 2400 50  0001 C CNN
+F 3 "" H 6450 2400 50  0001 C CNN
+	1    6450 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2400 6250 2550
+Wire Wire Line
+	6350 2400 6350 2550
+Wire Wire Line
+	6450 2400 6450 2550
+$Comp
+L OtterIronProRedesign-rescue:GNDA-power #PWR0105
+U 1 1 5FC33CCF
+P 6350 4750
+F 0 "#PWR0105" H 6350 4500 50  0001 C CNN
+F 1 "GNDA" H 6355 4577 50  0000 C CNN
+F 2 "" H 6350 4750 50  0001 C CNN
+F 3 "" H 6350 4750 50  0001 C CNN
+	1    6350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L OtterIronProRedesign-rescue:GND-power #PWR0106
+U 1 1 5FC341CD
+P 6250 4750
+F 0 "#PWR0106" H 6250 4500 50  0001 C CNN
+F 1 "GND" H 6255 4577 50  0000 C CNN
+F 2 "" H 6250 4750 50  0001 C CNN
+F 3 "" H 6250 4750 50  0001 C CNN
+	1    6250 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4450 6250 4750
+Wire Wire Line
+	6350 4750 6350 4450
+Text HLabel 5750 4250 0    50   Input ~ 0
+Switch2
+Text Label 6950 4050 0    50   ~ 0
+SWDIO
+Text Label 6950 4150 0    50   ~ 0
+SWCLK
+Wire Wire Line
+	6850 4050 6950 4050
+Wire Wire Line
+	6850 4150 6950 4150
+Text HLabel 6950 3050 2    50   Input ~ 0
+CurrentMeasurement
+Text HLabel 6950 2850 2    50   Input ~ 0
+IronTemperature
+Text HLabel 6950 2950 2    50   Input ~ 0
+PcbTemperature
+Text HLabel 6950 2750 2    50   Input ~ 0
+VBusMeasurement
+Wire Wire Line
+	6950 2750 6850 2750
+Wire Wire Line
+	6850 2850 6950 2850
+Wire Wire Line
+	6850 2950 6950 2950
+Wire Wire Line
+	6850 3050 6950 3050
+Text HLabel 6950 3550 2    50   Output ~ 0
+IronPwmH
+Text HLabel 6950 3450 2    50   Output ~ 0
+IronPwmL
+Wire Wire Line
+	6850 3750 6950 3750
+Wire Wire Line
+	5750 4250 5850 4250
+Text HLabel 6950 3650 2    50   Output ~ 0
+I2C_SCL
+Text HLabel 6950 3750 2    50   BiDi ~ 0
+I2C_SDA
+Wire Wire Line
+	6850 3550 6950 3550
+Wire Wire Line
+	6850 3450 6950 3450
+Wire Wire Line
+	6950 3650 6850 3650
+Text HLabel 6950 3350 2    50   Input ~ 0
+~VBusAvailable
+Text HLabel 5750 3650 0    50   Input ~ 0
+Switch1
+Text HLabel 5750 3550 0    50   Input ~ 0
+USB_Alert
+Wire Wire Line
+	6850 3350 6950 3350
+Wire Wire Line
+	5750 3550 5850 3550
+Wire Wire Line
+	5750 3650 5850 3650
+$Comp
+L OtterIronProRedesign-rescue:GND-power #PWR020
+U 1 1 5FB057C0
+P 3300 1050
+F 0 "#PWR020" H 3300 800 50  0001 C CNN
+F 1 "GND" H 3305 877 50  0000 C CNN
+F 2 "" H 3300 1050 50  0001 C CNN
+F 3 "" H 3300 1050 50  0001 C CNN
+	1    3300 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L OtterIronProRedesign-rescue:+3.3V-power #PWR017
+U 1 1 5FB04C7D
+P 3300 750
+F 0 "#PWR017" H 3300 600 50  0001 C CNN
+F 1 "+3.3V" H 3315 923 50  0000 C CNN
+F 2 "" H 3300 750 50  0001 C CNN
+F 3 "" H 3300 750 50  0001 C CNN
+	1    3300 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L OtterIronProRedesign-rescue:C-Device C2
+U 1 1 5FAEE30E
+P 3300 900
+F 0 "C2" H 3415 946 50  0000 L CNN
+F 1 "100nF" H 3415 855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3338 750 50  0001 C CNN
+F 3 "~" H 3300 900 50  0001 C CNN
+	1    3300 900 
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
