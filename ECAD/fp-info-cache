@@ -1,4 +1,4 @@
-19023116593611275
+18978195320004222
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -50714,104 +50714,6 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
-ECAD
-NetTie-2_SMD_Pad0.5mm
-Net tie, 2 pin, 0.5mm square SMD pads
-net tie
-0
-2
-2
-ECAD
-NetTie-2_SMD_Pad0.25mm
-
-
-0
-2
-2
-ECAD
-NetTie-2_THT_Pad0.3mm
-Net tie, 2 pin, 0.3mm round THT pads
-net tie
-0
-2
-2
-ECAD
-NetTie-2_THT_Pad1.0mm
-Net tie, 2 pin, 1.0mm round THT pads
-net tie
-0
-2
-2
-ECAD
-NetTie-3_SMD_Pad0.5mm
-Net tie, 3 pin, 0.5mm square SMD pads
-net tie
-0
-3
-3
-ECAD
-NetTie-3_SMD_Pad2.0mm
-Net tie, 3 pin, 2.0mm square SMD pads
-net tie
-0
-3
-3
-ECAD
-NetTie-3_THT_Pad0.3mm
-Net tie, 3 pin, 0.3mm round THT pads
-net tie
-0
-3
-3
-ECAD
-NetTie-3_THT_Pad1.0mm
-Net tie, 3 pin, 1.0mm round THT pads
-net tie
-0
-3
-3
-ECAD
-NetTie-4_SMD_Pad0.5mm
-Net tie, 4 pin, 0.5mm square SMD pads
-net tie
-0
-4
-4
-ECAD
-NetTie-4_SMD_Pad2.0mm
-Net tie, 4 pin, 2.0mm square SMD pads
-net tie
-0
-4
-4
-ECAD
-NetTie-4_THT_Pad0.3mm
-Net tie, 4 pin, 0.3mm round THT pads
-net tie
-0
-4
-4
-ECAD
-NetTie-4_THT_Pad1.0mm
-Net tie, 4 pin, 1.0mm round THT pads
-net tie
-0
-4
-4
-ECAD
-TestPoint_Pad_3.0x3.0mm
-SMD rectangular pad as test Point, square 3.0mm side length
-test point SMD pad rectangle square
-0
-1
-1
-ECAD
-TestPoint_Pad_5.0x3.0mm
-SMD rectangular pad as test Point, square 3.0mm side length
-test point SMD pad rectangle square
-0
-1
-1
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -59793,13 +59695,6 @@ DIL DIP PDIP 2.54mm 7.62mm 300mil
 0
 4
 4
-OtterIronPro_UiBoard
-NetTie-2_SMD_Pad0.25mm
-Net tie, 2 pin, 0.5mm square SMD pads
-net tie
-0
-2
-2
 Package_BGA
 Analog_BGA-28_4.0x6.25mm_Layout4x7_P0.8mm_Ball0.45mm_Pad0.4
 Analog BGA-28 4.0mm x 6.25mm package, pitch 0.4mm pad, based on https://www.analog.com/media/en/technical-documentation/data-sheets/8063fa.pdf
@@ -81262,97 +81157,6 @@ THT Terminal Block WAGO 804-324 45Degree pitch 7.5mm size 179x15mm^2 drill 1.2mm
 0
 48
 24
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRBU_74650073_THR
-REDCUBE THR with internal through-hole thread WP-THRBU (https://www.we-online.de/katalog/datasheet/74650073.pdf)
-screw terminal thread redcube thr power connector
-0
-8
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRBU_74650074_THR
-REDCUBE THR with internal through-hole thread WP-THRBU (https://www.we-online.de/katalog/datasheet/74650074.pdf)
-screw terminal thread redcube thr power connector
-0
-8
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRBU_74650094_THR
-REDCUBE THR with internal through-hole thread WP-THRBU (https://www.we-online.de/katalog/datasheet/74650094.pdf)
-screw terminal thread redcube thr power connector
-0
-16
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRBU_74650173_THR
-REDCUBE THR with internal through-hole thread WP-THRBU (https://www.we-online.de/katalog/datasheet/74650173.pdf)
-screw terminal thread redcube thr power connector
-0
-8
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRBU_74650174_THR
-REDCUBE THR with internal through-hole thread WP-THRBU (https://www.we-online.de/katalog/datasheet/74650174.pdf)
-screw terminal thread redcube thr power connector
-0
-8
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRBU_74650194_THR
-REDCUBE THR with internal through-hole thread WP-THRBU (https://www.we-online.de/katalog/datasheet/74650194.pdf)
-screw terminal thread redcube thr power connector
-0
-18
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRBU_74650195_THR
-REDCUBE THR with internal through-hole thread WP-THRBU (https://www.we-online.de/katalog/datasheet/74650195.pdf)
-screw terminal thread redcube thr power connector
-0
-18
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRBU_74655095_THR
-REDCUBE THR with internal through-hole thread WP-THRBU (https://www.we-online.de/katalog/datasheet/74655095.pdf)
-screw terminal thread redcube thr power connector
-0
-16
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRSH_74651173_THR
-REDCUBE THR with internal through-hole thread WP-THRSH (https://www.we-online.de/katalog/datasheet/74651173.pdf)
-screw terminal thread redcube thr power connector
-0
-8
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRSH_74651174_THR
-REDCUBE THR with internal through-hole thread WP-THRSH (https://www.we-online.de/katalog/datasheet/74651174.pdf)
-screw terminal thread redcube thr power connector
-0
-8
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRSH_74651175_THR
-REDCUBE THR with internal through-hole thread WP-THRSH (https://www.we-online.de/katalog/datasheet/74651175.pdf)
-screw terminal thread redcube thr power connector
-0
-8
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRSH_74651194_THR
-REDCUBE THR with internal through-hole thread WP-THRSH (https://www.we-online.de/katalog/datasheet/74651194.pdf)
-screw terminal thread redcube thr power connector
-0
-18
-1
-TerminalBlock_Wuerth
-Wuerth_REDCUBE-THR_WP-THRSH_74651195_THR
-REDCUBE THR with internal through-hole thread WP-THRSH (https://www.we-online.de/katalog/datasheet/74651195.pdf)
-screw terminal thread redcube thr power connector
-0
-18
-1
 TestPoint
 TestPoint_2Pads_Pitch2.54mm_Drill0.8mm
 Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm

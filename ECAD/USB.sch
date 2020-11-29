@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L OtterIronProRedesign-rescue:USB_C_Receptacle_USB2.0-Connector J25
+L OtterIronProRedesign-rescue:USB_C_Receptacle_USB2.0-Connector J19
 U 1 1 5FA49D2A
 P 1900 3700
-F 0 "J25" H 2007 4567 50  0000 C CNN
+F 0 "J19" H 2007 4567 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 2007 4476 50  0000 C CNN
 F 2 "Connector_USB:USB_C_Receptacle_XKB_U262-16XN-4BVC11" H 2050 3700 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2050 3700 50  0001 C CNN
@@ -27,10 +27,10 @@ F 5 "C167321" H 1900 3700 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:STUSB4500QTR-Interface_USB U2
+L OtterIronProRedesign-rescue:STUSB4500QTR-Interface_USB U3
 U 1 1 5FA4BD0C
 P 5350 3800
-F 0 "U2" H 5350 2811 50  0000 C CNN
+F 0 "U3" H 5350 2811 50  0000 C CNN
 F 1 "STUSB4500QTR" H 5350 2720 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 5350 3800 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/stusb4500.pdf" H 5350 3800 50  0001 C CNN
@@ -40,10 +40,10 @@ F 5 "C506650" H 5350 3800 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:USBLC6-4SC6-Power_Protection U3
+L OtterIronProRedesign-rescue:USBLC6-4SC6-Power_Protection U2
 U 1 1 5FA4C613
 P 3350 5400
-F 0 "U3" H 3350 5981 50  0000 C CNN
+F 0 "U2" H 3350 5981 50  0000 C CNN
 F 1 "USBLC6-4SC6" H 3350 5890 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3350 4900 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/usblc6-4.pdf" H 3550 5750 50  0001 C CNN
@@ -53,10 +53,10 @@ F 5 "C111212" H 3350 5400 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:C-Device C15
+L OtterIronProRedesign-rescue:C-Device C12
 U 1 1 5FA4F263
 P 3000 2850
-F 0 "C15" H 3115 2896 50  0000 L CNN
+F 0 "C12" H 3115 2896 50  0000 L CNN
 F 1 "100nF" H 3115 2805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 3038 2700 50  0001 C CNN
 F 3 "~" H 3000 2850 50  0001 C CNN
@@ -64,10 +64,10 @@ F 3 "~" H 3000 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:C-Device C13
+L OtterIronProRedesign-rescue:C-Device C14
 U 1 1 5FA4F950
 P 5900 2350
-F 0 "C13" V 5648 2350 50  0000 C CNN
+F 0 "C14" V 5648 2350 50  0000 C CNN
 F 1 "1µF 35V" V 5739 2350 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 5938 2200 50  0001 C CNN
 F 3 "~" H 5900 2350 50  0001 C CNN
@@ -119,10 +119,10 @@ Connection ~ 2600 3600
 Wire Wire Line
 	2600 3600 3050 3600
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR051
+L OtterIronProRedesign-rescue:GND-power #PWR054
 U 1 1 5FA54DF1
 P 4650 4600
-F 0 "#PWR051" H 4650 4350 50  0001 C CNN
+F 0 "#PWR054" H 4650 4350 50  0001 C CNN
 F 1 "GND" H 4655 4427 50  0000 C CNN
 F 2 "" H 4650 4600 50  0001 C CNN
 F 3 "" H 4650 4600 50  0001 C CNN
@@ -143,10 +143,10 @@ NoConn ~ 5950 4200
 NoConn ~ 5950 3800
 NoConn ~ 5950 4400
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR049
+L OtterIronProRedesign-rescue:GND-power #PWR047
 U 1 1 5FA58BC0
 P 1600 4600
-F 0 "#PWR049" H 1600 4350 50  0001 C CNN
+F 0 "#PWR047" H 1600 4350 50  0001 C CNN
 F 1 "GND" H 1605 4427 50  0000 C CNN
 F 2 "" H 1600 4600 50  0001 C CNN
 F 3 "" H 1600 4600 50  0001 C CNN
@@ -154,10 +154,10 @@ F 3 "" H 1600 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR050
+L OtterIronProRedesign-rescue:GND-power #PWR048
 U 1 1 5FA58FBE
 P 1900 4600
-F 0 "#PWR050" H 1900 4350 50  0001 C CNN
+F 0 "#PWR048" H 1900 4350 50  0001 C CNN
 F 1 "GND" H 1905 4427 50  0000 C CNN
 F 2 "" H 1900 4600 50  0001 C CNN
 F 3 "" H 1900 4600 50  0001 C CNN
@@ -169,10 +169,10 @@ NoConn ~ 2500 4300
 Wire Wire Line
 	2500 3100 2600 3100
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR047
+L OtterIronProRedesign-rescue:GND-power #PWR049
 U 1 1 5FA5C044
 P 3000 3000
-F 0 "#PWR047" H 3000 2750 50  0001 C CNN
+F 0 "#PWR049" H 3000 2750 50  0001 C CNN
 F 1 "GND" H 3005 2827 50  0000 C CNN
 F 2 "" H 3000 3000 50  0001 C CNN
 F 3 "" H 3000 3000 50  0001 C CNN
@@ -180,10 +180,10 @@ F 3 "" H 3000 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:+3.3V-power #PWR045
+L OtterIronProRedesign-rescue:+3.3V-power #PWR055
 U 1 1 5FA5D1A6
 P 5350 2900
-F 0 "#PWR045" H 5350 2750 50  0001 C CNN
+F 0 "#PWR055" H 5350 2750 50  0001 C CNN
 F 1 "+3.3V" H 5365 3073 50  0000 C CNN
 F 2 "" H 5350 2900 50  0001 C CNN
 F 3 "" H 5350 2900 50  0001 C CNN
@@ -191,10 +191,10 @@ F 3 "" H 5350 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:C-Device C14
+L OtterIronProRedesign-rescue:C-Device C15
 U 1 1 5FA65417
 P 5900 2800
-F 0 "C14" V 5648 2800 50  0000 C CNN
+F 0 "C15" V 5648 2800 50  0000 C CNN
 F 1 "1µF 35V" V 5739 2800 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 5938 2650 50  0001 C CNN
 F 3 "~" H 5900 2800 50  0001 C CNN
@@ -219,10 +219,10 @@ Connection ~ 6150 2800
 Wire Wire Line
 	6150 2800 6150 2900
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR046
+L OtterIronProRedesign-rescue:GND-power #PWR057
 U 1 1 5FA74B1E
 P 6150 2900
-F 0 "#PWR046" H 6150 2650 50  0001 C CNN
+F 0 "#PWR057" H 6150 2650 50  0001 C CNN
 F 1 "GND" H 6155 2727 50  0000 C CNN
 F 2 "" H 6150 2900 50  0001 C CNN
 F 3 "" H 6150 2900 50  0001 C CNN
@@ -259,10 +259,10 @@ Wire Wire Line
 NoConn ~ 5950 3500
 NoConn ~ 5950 3900
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR053
+L OtterIronProRedesign-rescue:GND-power #PWR056
 U 1 1 5FA7B10B
 P 5350 5000
-F 0 "#PWR053" H 5350 4750 50  0001 C CNN
+F 0 "#PWR056" H 5350 4750 50  0001 C CNN
 F 1 "GND" H 5355 4827 50  0000 C CNN
 F 2 "" H 5350 5000 50  0001 C CNN
 F 3 "" H 5350 5000 50  0001 C CNN
@@ -290,10 +290,10 @@ USB_P
 Text Label 3850 5300 0    50   ~ 0
 USB_N
 $Comp
-L OtterIronProRedesign-rescue:+3.3V-power #PWR052
+L OtterIronProRedesign-rescue:+3.3V-power #PWR050
 U 1 1 5FA81F4A
 P 3350 4750
-F 0 "#PWR052" H 3350 4600 50  0001 C CNN
+F 0 "#PWR050" H 3350 4600 50  0001 C CNN
 F 1 "+3.3V" H 3365 4923 50  0000 C CNN
 F 2 "" H 3350 4750 50  0001 C CNN
 F 3 "" H 3350 4750 50  0001 C CNN
@@ -301,10 +301,10 @@ F 3 "" H 3350 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR054
+L OtterIronProRedesign-rescue:GND-power #PWR051
 U 1 1 5FA8260F
 P 3350 5800
-F 0 "#PWR054" H 3350 5550 50  0001 C CNN
+F 0 "#PWR051" H 3350 5550 50  0001 C CNN
 F 1 "GND" H 3355 5627 50  0000 C CNN
 F 2 "" H 3350 5800 50  0001 C CNN
 F 3 "" H 3350 5800 50  0001 C CNN
@@ -337,10 +337,10 @@ Text HLabel 6050 3700 2    50   Output ~ 0
 Wire Wire Line
 	5950 3700 6050 3700
 $Comp
-L OtterIronProRedesign-rescue:C-Device C16
+L OtterIronProRedesign-rescue:C-Device C13
 U 1 1 5FA82628
 P 3500 2850
-F 0 "C16" H 3615 2896 50  0000 L CNN
+F 0 "C13" H 3615 2896 50  0000 L CNN
 F 1 "1µF 35V" H 3615 2805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 3538 2700 50  0001 C CNN
 F 3 "~" H 3500 2850 50  0001 C CNN
@@ -348,10 +348,10 @@ F 3 "~" H 3500 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR048
+L OtterIronProRedesign-rescue:GND-power #PWR052
 U 1 1 5FA82F20
 P 3500 3000
-F 0 "#PWR048" H 3500 2750 50  0001 C CNN
+F 0 "#PWR052" H 3500 2750 50  0001 C CNN
 F 1 "GND" H 3505 2827 50  0000 C CNN
 F 2 "" H 3500 3000 50  0001 C CNN
 F 3 "" H 3500 3000 50  0001 C CNN
@@ -383,10 +383,10 @@ VBusIn
 Wire Wire Line
 	3500 2700 4300 2700
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR0101
+L OtterIronProRedesign-rescue:GND-power #PWR053
 U 1 1 5FC21147
 P 4200 3150
-F 0 "#PWR0101" H 4200 2900 50  0001 C CNN
+F 0 "#PWR053" H 4200 2900 50  0001 C CNN
 F 1 "GND" H 4205 2977 50  0000 C CNN
 F 2 "" H 4200 3150 50  0001 C CNN
 F 3 "" H 4200 3150 50  0001 C CNN

@@ -21,6 +21,8 @@ F 0 "U6" H 4300 4967 50  0000 C CNN
 F 1 "LM5109AMA" H 4300 4876 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4300 3900 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm5109a.pdf" H 4300 4400 50  0001 C CNN
+F 4 "LM5109AMAX/NOPB" H 4300 4400 50  0001 C CNN "manf#"
+F 5 "C129332" H 4300 4400 50  0001 C CNN "LCSC"
 	1    4300 4400
 	1    0    0    -1  
 $EndComp
@@ -47,10 +49,10 @@ F 3 "~" H 5000 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:C-Device C24
+L OtterIronProRedesign-rescue:C-Device C22
 U 1 1 5FB19178
 P 3500 4150
-F 0 "C24" H 3615 4196 50  0000 L CNN
+F 0 "C22" H 3615 4196 50  0000 L CNN
 F 1 "1µF 35V" H 3615 4105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 3538 4000 50  0001 C CNN
 F 3 "~" H 3500 4150 50  0001 C CNN
@@ -119,6 +121,8 @@ F 0 "Q1" H 6604 4046 50  0000 L CNN
 F 1 "Q_NMOS_GDS" H 6604 3955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:TO-252-2" H 6600 4100 50  0001 C CNN
 F 3 "~" H 6400 4000 50  0001 C CNN
+F 4 "IRF4104SPBF" H 6400 4000 50  0001 C CNN "manf#"
+F 5 "C169754" H 6400 4000 50  0001 C CNN "LCSC"
 	1    6400 4000
 	1    0    0    -1  
 $EndComp
@@ -127,8 +131,8 @@ L OtterIronProRedesign-rescue:VBUS-power #PWR?
 U 1 1 5FB0891E
 P 6500 3650
 AR Path="/5FB0891E" Ref="#PWR?"  Part="1" 
-AR Path="/5FA8950E/5FB0891E" Ref="#PWR068"  Part="1" 
-F 0 "#PWR068" H 6500 3500 50  0001 C CNN
+AR Path="/5FA8950E/5FB0891E" Ref="#PWR073"  Part="1" 
+F 0 "#PWR073" H 6500 3500 50  0001 C CNN
 F 1 "VBUS" H 6515 3823 50  0000 C CNN
 F 2 "" H 6500 3650 50  0001 C CNN
 F 3 "" H 6500 3650 50  0001 C CNN
@@ -136,10 +140,10 @@ F 3 "" H 6500 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR071
+L OtterIronProRedesign-rescue:GND-power #PWR074
 U 1 1 5FB095AB
 P 6500 5300
-F 0 "#PWR071" H 6500 5050 50  0001 C CNN
+F 0 "#PWR074" H 6500 5050 50  0001 C CNN
 F 1 "GND" H 6505 5127 50  0000 C CNN
 F 2 "" H 6500 5300 50  0001 C CNN
 F 3 "" H 6500 5300 50  0001 C CNN
@@ -160,6 +164,8 @@ F 0 "D2" V 5046 3420 50  0000 R CNN
 F 1 "D" V 4955 3420 50  0000 R CNN
 F 2 "Diode_SMD:D_SMA" H 5000 3500 50  0001 C CNN
 F 3 "~" H 5000 3500 50  0001 C CNN
+F 4 "M7" V 5000 3500 50  0001 C CNN "manf#"
+F 5 " C95872" V 5000 3500 50  0001 C CNN "LCSC"
 	1    5000 3500
 	0    -1   -1   0   
 $EndComp
@@ -185,10 +191,10 @@ Wire Wire Line
 Text Notes 2650 6050 0    50   ~ 0
 This gate driver works with a supply voltage down to 8V. A wider range of gate drivers can be used when the 9V\nregulator on the sheet "supply" is replaced by a (pin compatible) 12V regulator (most pin compatible gate drivers need\na minimum supply voltage of 10V). In this case, the board might no longer work from 12V power supplies any more.
 $Comp
-L power:+9V #PWR069
+L power:+9V #PWR070
 U 1 1 5FB1D36A
 P 3500 3900
-F 0 "#PWR069" H 3500 3750 50  0001 C CNN
+F 0 "#PWR070" H 3500 3750 50  0001 C CNN
 F 1 "+9V" H 3515 4073 50  0000 C CNN
 F 2 "" H 3500 3900 50  0001 C CNN
 F 3 "" H 3500 3900 50  0001 C CNN
@@ -199,10 +205,10 @@ Wire Wire Line
 	3500 3900 3500 4000
 Connection ~ 3500 4000
 $Comp
-L power:+9V #PWR067
+L power:+9V #PWR072
 U 1 1 5FB1DBAF
 P 5000 2850
-F 0 "#PWR067" H 5000 2700 50  0001 C CNN
+F 0 "#PWR072" H 5000 2700 50  0001 C CNN
 F 1 "+9V" H 5015 3023 50  0000 C CNN
 F 2 "" H 5000 2850 50  0001 C CNN
 F 3 "" H 5000 2850 50  0001 C CNN
@@ -219,10 +225,10 @@ Wire Wire Line
 Wire Wire Line
 	6500 4500 7500 4500
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR070
+L OtterIronProRedesign-rescue:GND-power #PWR071
 U 1 1 5FBB4245
 P 3500 4800
-F 0 "#PWR070" H 3500 4550 50  0001 C CNN
+F 0 "#PWR071" H 3500 4550 50  0001 C CNN
 F 1 "GND" H 3505 4627 50  0000 C CNN
 F 2 "" H 3500 4800 50  0001 C CNN
 F 3 "" H 3500 4800 50  0001 C CNN

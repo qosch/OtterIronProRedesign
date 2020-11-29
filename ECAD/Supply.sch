@@ -27,10 +27,10 @@ F 5 "C156303" H 5000 3500 50  0001 C CNN "Field5"
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:C-Device C20
+L OtterIronProRedesign-rescue:C-Device C17
 U 1 1 5FA8D177
 P 4000 3650
-F 0 "C20" H 4115 3696 50  0000 L CNN
+F 0 "C17" H 4115 3696 50  0000 L CNN
 F 1 "1µF 35V" H 4115 3605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 3500 50  0001 C CNN
 F 3 "~" H 4000 3650 50  0001 C CNN
@@ -38,10 +38,10 @@ F 3 "~" H 4000 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:C-Device C21
+L OtterIronProRedesign-rescue:C-Device C19
 U 1 1 5FA8D520
 P 5500 3650
-F 0 "C21" H 5615 3696 50  0000 L CNN
+F 0 "C19" H 5615 3696 50  0000 L CNN
 F 1 "1µF 35V" H 5615 3605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 5538 3500 50  0001 C CNN
 F 3 "~" H 5500 3650 50  0001 C CNN
@@ -49,10 +49,10 @@ F 3 "~" H 5500 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:C-Device C22
+L OtterIronProRedesign-rescue:C-Device C21
 U 1 1 5FA8DA74
 P 6050 3650
-F 0 "C22" H 6165 3696 50  0000 L CNN
+F 0 "C21" H 6165 3696 50  0000 L CNN
 F 1 "1µF 35V" H 6165 3605 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6088 3500 50  0001 C CNN
 F 3 "~" H 6050 3650 50  0001 C CNN
@@ -67,10 +67,10 @@ Wire Wire Line
 	5500 3500 6050 3500
 Connection ~ 5500 3500
 $Comp
-L OtterIronProRedesign-rescue:+3.3V-power #PWR062
+L OtterIronProRedesign-rescue:+3.3V-power #PWR069
 U 1 1 5FA8EB02
 P 6150 3400
-F 0 "#PWR062" H 6150 3250 50  0001 C CNN
+F 0 "#PWR069" H 6150 3250 50  0001 C CNN
 F 1 "+3.3V" H 6165 3573 50  0000 C CNN
 F 2 "" H 6150 3400 50  0001 C CNN
 F 3 "" H 6150 3400 50  0001 C CNN
@@ -88,10 +88,10 @@ Wire Wire Line
 	3900 3500 3900 3400
 Connection ~ 4000 3500
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR063
+L OtterIronProRedesign-rescue:GND-power #PWR061
 U 1 1 5FA8F9EC
 P 4000 3800
-F 0 "#PWR063" H 4000 3550 50  0001 C CNN
+F 0 "#PWR061" H 4000 3550 50  0001 C CNN
 F 1 "GND" H 4005 3627 50  0000 C CNN
 F 2 "" H 4000 3800 50  0001 C CNN
 F 3 "" H 4000 3800 50  0001 C CNN
@@ -99,10 +99,10 @@ F 3 "" H 4000 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR064
+L OtterIronProRedesign-rescue:GND-power #PWR063
 U 1 1 5FA8FC81
 P 5000 3800
-F 0 "#PWR064" H 5000 3550 50  0001 C CNN
+F 0 "#PWR063" H 5000 3550 50  0001 C CNN
 F 1 "GND" H 5005 3627 50  0000 C CNN
 F 2 "" H 5000 3800 50  0001 C CNN
 F 3 "" H 5000 3800 50  0001 C CNN
@@ -121,10 +121,10 @@ F 3 "" H 5500 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR066
+L OtterIronProRedesign-rescue:GND-power #PWR067
 U 1 1 5FA8FFD8
 P 6050 3800
-F 0 "#PWR066" H 6050 3550 50  0001 C CNN
+F 0 "#PWR067" H 6050 3550 50  0001 C CNN
 F 1 "GND" H 6055 3627 50  0000 C CNN
 F 2 "" H 6050 3800 50  0001 C CNN
 F 3 "" H 6050 3800 50  0001 C CNN
@@ -145,10 +145,10 @@ F 5 "C148310" H 5000 2000 50  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:VBUS-power #PWR055
+L OtterIronProRedesign-rescue:VBUS-power #PWR058
 U 1 1 5FB0E13B
 P 3900 1900
-F 0 "#PWR055" H 3900 1750 50  0001 C CNN
+F 0 "#PWR058" H 3900 1750 50  0001 C CNN
 F 1 "VBUS" H 3915 2073 50  0000 C CNN
 F 2 "" H 3900 1900 50  0001 C CNN
 F 3 "" H 3900 1900 50  0001 C CNN
@@ -156,10 +156,10 @@ F 3 "" H 3900 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:C-Device C17
+L OtterIronProRedesign-rescue:C-Device C16
 U 1 1 5FB0EA4A
 P 4000 2150
-F 0 "C17" H 4115 2196 50  0000 L CNN
+F 0 "C16" H 4115 2196 50  0000 L CNN
 F 1 "1µF 35V" H 4115 2105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 2000 50  0001 C CNN
 F 3 "~" H 4000 2150 50  0001 C CNN
@@ -178,10 +178,10 @@ F 3 "~" H 5500 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:C-Device C19
+L OtterIronProRedesign-rescue:C-Device C20
 U 1 1 5FB0FB34
 P 6050 2150
-F 0 "C19" H 6165 2196 50  0000 L CNN
+F 0 "C20" H 6165 2196 50  0000 L CNN
 F 1 "1µF 35V" H 6165 2105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6088 2000 50  0001 C CNN
 F 3 "~" H 6050 2150 50  0001 C CNN
@@ -189,10 +189,10 @@ F 3 "~" H 6050 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR058
+L OtterIronProRedesign-rescue:GND-power #PWR062
 U 1 1 5FB0FEC3
 P 5000 2300
-F 0 "#PWR058" H 5000 2050 50  0001 C CNN
+F 0 "#PWR062" H 5000 2050 50  0001 C CNN
 F 1 "GND" H 5005 2127 50  0000 C CNN
 F 2 "" H 5000 2300 50  0001 C CNN
 F 3 "" H 5000 2300 50  0001 C CNN
@@ -200,10 +200,10 @@ F 3 "" H 5000 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR057
+L OtterIronProRedesign-rescue:GND-power #PWR060
 U 1 1 5FB102CF
 P 4000 2300
-F 0 "#PWR057" H 4000 2050 50  0001 C CNN
+F 0 "#PWR060" H 4000 2050 50  0001 C CNN
 F 1 "GND" H 4005 2127 50  0000 C CNN
 F 2 "" H 4000 2300 50  0001 C CNN
 F 3 "" H 4000 2300 50  0001 C CNN
@@ -211,10 +211,10 @@ F 3 "" H 4000 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR059
+L OtterIronProRedesign-rescue:GND-power #PWR064
 U 1 1 5FB106A9
 P 5500 2300
-F 0 "#PWR059" H 5500 2050 50  0001 C CNN
+F 0 "#PWR064" H 5500 2050 50  0001 C CNN
 F 1 "GND" H 5505 2127 50  0000 C CNN
 F 2 "" H 5500 2300 50  0001 C CNN
 F 3 "" H 5500 2300 50  0001 C CNN
@@ -222,10 +222,10 @@ F 3 "" H 5500 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:GND-power #PWR060
+L OtterIronProRedesign-rescue:GND-power #PWR066
 U 1 1 5FB10AEC
 P 6050 2300
-F 0 "#PWR060" H 6050 2050 50  0001 C CNN
+F 0 "#PWR066" H 6050 2050 50  0001 C CNN
 F 1 "GND" H 6055 2127 50  0000 C CNN
 F 2 "" H 6050 2300 50  0001 C CNN
 F 3 "" H 6050 2300 50  0001 C CNN
@@ -233,10 +233,10 @@ F 3 "" H 6050 2300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OtterIronProRedesign-rescue:+9V-power #PWR056
+L OtterIronProRedesign-rescue:+9V-power #PWR068
 U 1 1 5FB10F5D
 P 6150 1900
-F 0 "#PWR056" H 6150 1750 50  0001 C CNN
+F 0 "#PWR068" H 6150 1750 50  0001 C CNN
 F 1 "+9V" H 6165 2073 50  0000 C CNN
 F 2 "" H 6150 1900 50  0001 C CNN
 F 3 "" H 6150 1900 50  0001 C CNN
@@ -261,10 +261,10 @@ Connection ~ 4000 2000
 Wire Wire Line
 	4000 2000 3900 2000
 $Comp
-L OtterIronProRedesign-rescue:+9V-power #PWR061
+L OtterIronProRedesign-rescue:+9V-power #PWR059
 U 1 1 5FB88C33
 P 3900 3400
-F 0 "#PWR061" H 3900 3250 50  0001 C CNN
+F 0 "#PWR059" H 3900 3250 50  0001 C CNN
 F 1 "+9V" H 3915 3573 50  0000 C CNN
 F 2 "" H 3900 3400 50  0001 C CNN
 F 3 "" H 3900 3400 50  0001 C CNN
